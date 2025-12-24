@@ -1,0 +1,10 @@
+
+    @URL = "http://192.168.1.100:3000"
+
+POST {{URL}}/api/chat
+Content-Type: application/json
+
+{
+    "prompt":"What is the capital of France?"
+}
+
