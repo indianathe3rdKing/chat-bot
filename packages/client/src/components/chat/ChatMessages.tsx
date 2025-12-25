@@ -26,13 +26,13 @@ const ChatMessages = ({ messages }: Props) => {
    };
 
    return (
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col  gap-3">
          {messages.map((message, index) => (
             <div
                key={index}
                onCopy={onCopyMessage}
                ref={index === messages.length - 1 ? lastMessageRef : null}
-               className={`px-4 py-2 rounded-3xl ${
+               className={`px-4 py-2 max-w-md rounded-3xl ${
                   message.role === 'user'
                      ? 'bg-blue-950 text-white self-end'
                      : 'bg-gray-100 text-black self-start'
