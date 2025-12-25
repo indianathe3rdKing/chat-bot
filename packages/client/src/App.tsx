@@ -2,7 +2,7 @@ import './index.css';
 import ChatBot from './components/ui/ChatBot';
 function App() {
    return (
-      <div className="p-4">
+      <div className="p-4  h-screen   ">
          <ChatBot />
       </div>
    );
