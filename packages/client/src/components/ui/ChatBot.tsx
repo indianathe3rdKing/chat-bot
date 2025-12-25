@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
+import React, { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useForm } from 'react-hook-form';
 import { Button } from './button';
@@ -51,12 +51,20 @@ const ChatBot = () => {
       }
    };
 
+   const newLocal = (e: React.ClipboardEvent) => {
+      const selection = window.getSelection()?.toString().trim();
+      if (selection) {
+         e.preventDefault();
+         e.clipboardData.setData('text/plain', selection);
+      }
+   };
    return (
       <div>
          <div className="flex flex-col gap-3 mb-10">
             {messages.map((message, index) => (
                <p
                   key={index}
+                  onCopy={newLocal}
                   className={`px-4 py-2 rounded-3xl ${
                      message.role === 'user'
                         ? 'bg-blue-950 text-white self-end'
