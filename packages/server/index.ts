@@ -9,9 +9,11 @@ const app = express();
 app.use(
    cors({
       origin: [
+         'http://localhost:5173',
          'https://chat-bot-1-rv89.onrender.com',
-         'https://chat-bot-client-phi.vercel.app/',
+         'https://chat-bot-client-phi.vercel.app',
       ],
+      credentials: true,
    })
 );
 app.use(express.json());
