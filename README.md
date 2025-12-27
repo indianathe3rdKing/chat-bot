@@ -88,6 +88,7 @@ bun run build
 ## 📝 Code Style
 
 This project uses:
+
 - **Prettier** for code formatting
 - **ESLint** for code quality
 - **Husky** for git hooks

@@ -87,15 +87,19 @@ src/
 ## 💻 Component Guide
 
 ### ChatBot
+
 Main chat interface component that orchestrates the conversation flow.
 
 ### ChatMessages
+
 Displays message history with proper formatting and timestamps.
 
 ### ChatInput
+
 User input field with send button and validation.
 
 ### TypingIndicator
+
 Animated indicator showing when the AI is typing.
 
 ## 🏄 Best Practices
@@ -112,6 +116,7 @@ The client communicates with the backend server at `http://localhost:3000` (or c
 ## 📱 Responsive Design
 
 The UI is fully responsive and works on:
+
 - Desktop (1920px and up)
 - Tablet (768px - 1024px)
 - Mobile (320px - 767px)
@@ -133,11 +138,13 @@ The UI is fully responsive and works on:
 ## 🐛 Troubleshooting
 
 **Port already in use?**
+
 ```bash
 bun run dev -- --port 3001
 ```
 
 **Clear cache and rebuild:**
+
 ```bash
 rm -rf node_modules dist
 bun install

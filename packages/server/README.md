@@ -74,9 +74,11 @@ src/
 ## 📋 Controllers
 
 ### ChatController
+
 Handles all chat-related HTTP requests and responses.
 
 **Key Methods:**
+
 - `sendMessage()` - Process incoming messages
 - `getConversations()` - Retrieve chat history
 - `getConversation()` - Get specific conversation
@@ -85,9 +87,11 @@ Handles all chat-related HTTP requests and responses.
 ## 🔧 Services
 
 ### ChatService
+
 Core business logic for chat operations.
 
 **Key Methods:**
+
 - `processMessage()` - Generate AI responses
 - `validateInput()` - Input validation
 - `formatResponse()` - Response formatting
@@ -95,9 +99,11 @@ Core business logic for chat operations.
 ## 💾 Repositories
 
 ### ConversationRepository
+
 Data access layer for conversation storage.
 
 **Key Methods:**
+
 - `save()` - Store conversation
 - `findById()` - Retrieve conversation
 - `findAll()` - Get all conversations
@@ -140,12 +146,13 @@ curl -X POST http://localhost:3000/api/chat \
 ```
 
 **Response:**
+
 ```json
 {
-  "id": "conv-123",
-  "message": "Hello, how are you?",
-  "response": "I'm doing great! How can I help you today?",
-  "timestamp": "2025-12-26T10:30:00Z"
+   "id": "conv-123",
+   "message": "Hello, how are you?",
+   "response": "I'm doing great! How can I help you today?",
+   "timestamp": "2025-12-26T10:30:00Z"
 }
 ```
 
@@ -174,17 +181,20 @@ bun install -g rest-client
 ## 🐛 Troubleshooting
 
 **Port already in use?**
+
 ```bash
 PORT=3001 bun run index.ts
 ```
 
 **Clear dependencies:**
+
 ```bash
 rm -rf node_modules
 bun install
 ```
 
 **Check TypeScript errors:**
+
 ```bash
 bun check
 ```
