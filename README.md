@@ -1,11 +1,16 @@
-# ChatBot - AI-Powered Conversational Application
+# ChatBot - WonderWorld AI Assistant
 
-A modern, full-stack chat application built with React, TypeScript, and Express. Features real-time messaging with AI-powered responses and a beautiful user interface.
+A proof-of-concept, full-stack chat application built with React, TypeScript, and Express. Features a specialized AI chatbot trained to answer questions about **WonderWorld**, an imaginary theme park with attractions, ticketing, dining, and more.
+
+## 🎯 About This Project
+
+This is a **demo project** created to learn and explore AI-powered conversational responses using OpenAI. The chatbot specializes in answering questions about WonderWorld's attractions, tickets, dining options, and park information. Built to gain hands-on experience integrating AI capabilities into web applications.
 
 ## 🚀 Features
 
+- **WonderWorld Theme Park Assistant** - Specialized AI responses about park attractions, tickets, and information
 - **Real-time Chat Interface** - Smooth, responsive messaging experience
-- **AI-Powered Responses** - Intelligent conversational capabilities
+- **AI-Powered Responses** - Intelligent conversational capabilities using OpenAI
 - **TypeScript Support** - Type-safe code across the entire stack
 - **Modern UI** - Built with React and Vite for optimal performance
 - **Monorepo Structure** - Organized package management with workspaces
@@ -24,10 +29,11 @@ chat-bot/
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 19, TypeScript, Vite, Tailwind CSS
-- **Backend**: Express.js, TypeScript
+- **Frontend**: React 19, TypeScript, Vite, Tailwind CSS, Axios
+- **Backend**: Express.js, TypeScript, OpenAI API, CORS
 - **Runtime**: Bun (all-in-one JavaScript runtime)
 - **Package Manager**: Bun Workspaces
+- **AI**: OpenAI API for conversational responses
 
 ## 📋 Prerequisites
 
@@ -79,6 +85,10 @@ bun run build
 - [Client Documentation](./packages/client/README.md) - React frontend setup and commands
 - [Server Documentation](./packages/server/README.md) - Express backend API documentation
 
+## � Screenshots
+
+![ChatBot Interface](./packages/client/src/assets/images/chatbot.png)
+
 ## 🔧 Available Scripts
 
 - `bun run dev` - Start development environment
@@ -95,17 +105,6 @@ This project uses:
 
 Code is automatically formatted on commit.
 
-## 🤝 Contributing
-
-1. Create a feature branch
-2. Make your changes
-3. Commit with descriptive messages
-4. Push and create a pull request
-
-## 📄 License
-
-MIT License - feel free to use this project for personal or commercial purposes.
-
 ## 💡 Getting Help
 
 If you encounter any issues:
@@ -115,5 +114,3 @@ If you encounter any issues:
 3. Ensure all dependencies are installed with `bun install`
 
 ---
-
-**Happy coding! 🎉**
