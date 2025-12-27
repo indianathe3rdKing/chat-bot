@@ -23,8 +23,6 @@ export default defineConfig({
          '/api': {
             target: 'https://chat-bot-1-rv89.onrender.com',
             changeOrigin: true,
-            secure: false,
-            rewrite: (path) => path.replace(/^\/api/, '/api'),
          },
       },
    },

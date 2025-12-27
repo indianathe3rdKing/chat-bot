@@ -8,12 +8,14 @@
       "dev": "bun --watch run index.ts"
    },
    "devDependencies": {
-      "@types/bun": "latest"
+      "@types/bun": "latest",
+      "@types/cors": "^2.8.19"
    },
    "peerDependencies": {
       "typescript": "^5"
    },
    "dependencies": {
+      "cors": "^2.8.5",
       "dotenv": "^17.2.3",
       "express": "^5.2.1",
       "openai": "^6.15.0"
