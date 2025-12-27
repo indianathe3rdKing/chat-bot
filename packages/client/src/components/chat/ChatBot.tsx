@@ -31,10 +31,13 @@ const ChatBot = () => {
          setMessages((prev) => [...prev, { content: prompt, role: 'user' }]);
          setIsBotTyping(true);
          setError('');
-         const { data } = await axios.post<ChatResponse>('/api/chat', {
-            prompt,
-            conversationId: conversationId.current,
-         });
+         const { data } = await axios.post<ChatResponse>(
+            'http://chat-bot-1-rv89.onrender.com/api/chat',
+            {
+               prompt,
+               conversationId: conversationId.current,
+            }
+         );
 
          setMessages((prev) => [
             ...prev,
