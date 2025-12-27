@@ -20,7 +20,10 @@ export default defineConfig({
    },
    server: {
       proxy: {
-         '/api': 'http://localhost:3000',
+         '/api': {
+            target: 'https://chat-bot-1-rv89.onrender.com',
+            changeOrigin: true,
+         },
       },
    },
 });
