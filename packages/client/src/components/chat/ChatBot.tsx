@@ -32,7 +32,7 @@ const ChatBot = () => {
          setIsBotTyping(true);
          setError('');
          const { data } = await axios.post<ChatResponse>(
-            'http://chat-bot-1-rv89.onrender.com/api/chat',
+            'https://chat-bot-1-rv89.onrender.com/api/chat',
             {
                prompt,
                conversationId: conversationId.current,
